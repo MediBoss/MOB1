@@ -1,6 +1,12 @@
-MOB 1 Projects
+# MOB 1 Projects
 
-1. Tip Ca;culator
-2. Tic Tac Toe
-3. Mood Tracker
-4. Custom Project
+
+### Assigned Projects
+* Tip Ca;culator
+* Tic Tac Toe
+* Mood Tracker
+
+
+### Custom Project
+
+* <a href = "https://github.com/MediBoss/WageR">WageR</a>
