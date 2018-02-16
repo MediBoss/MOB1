@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		670FFEB420367CAB007B83FD /* Payroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670FFEB320367CAB007B83FD /* Payroll.swift */; };
 		67DEEE48202213A600AAD72C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DEEE47202213A600AAD72C /* AppDelegate.swift */; };
 		67DEEE4A202213A600AAD72C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DEEE49202213A600AAD72C /* ViewController.swift */; };
 		67DEEE4D202213A600AAD72C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DEEE4B202213A600AAD72C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		670FFEB320367CAB007B83FD /* Payroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payroll.swift; sourceTree = "<group>"; };
 		67DEEE44202213A600AAD72C /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DEEE47202213A600AAD72C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67DEEE49202213A600AAD72C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,11 +37,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		670FFEB120367C51007B83FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				670FFEB320367CAB007B83FD /* Payroll.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		670FFEB220367C67007B83FD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				67DEEE49202213A600AAD72C /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		67DEEE3B202213A600AAD72C = {
 			isa = PBXGroup;
 			children = (
 				67DEEE46202213A600AAD72C /* TipCalculator */,
 				67DEEE45202213A600AAD72C /* Products */,
+				670FFEB120367C51007B83FD /* Model */,
+				670FFEB220367C67007B83FD /* ViewController */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				67DEEE47202213A600AAD72C /* AppDelegate.swift */,
-				67DEEE49202213A600AAD72C /* ViewController.swift */,
 				67DEEE4B202213A600AAD72C /* Main.storyboard */,
 				67DEEE4E202213A600AAD72C /* Assets.xcassets */,
 				67DEEE50202213A600AAD72C /* LaunchScreen.storyboard */,
@@ -138,6 +157,7 @@
 			files = (
 				67DEEE4A202213A600AAD72C /* ViewController.swift in Sources */,
 				67DEEE48202213A600AAD72C /* AppDelegate.swift in Sources */,
+				670FFEB420367CAB007B83FD /* Payroll.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
