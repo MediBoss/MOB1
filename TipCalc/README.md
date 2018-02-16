@@ -1,4 +1,4 @@
-Project - Tip Calculator
+## Project - Tip Calculator
 
 We will be going through the Tip calculator material here: www.makeschool.com/academy
 
