@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class Payroll{
+    
+    private var billAmount : Double
+    private var tipPercent : Double
+    
+    init(bill : Double, percent : Double) {
+        
+        self.billAmount = bill
+        self.tipPercent = percent
+    }
+    
+    
+    
+}
