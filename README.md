@@ -2,7 +2,7 @@
 
 
 ### Assigned Projects
-* Tip Ca;culator
+* Tip Calculator
 * Tic Tac Toe
 * Mood Tracker
 
