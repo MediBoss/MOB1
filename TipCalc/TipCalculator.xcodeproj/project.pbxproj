@@ -58,8 +58,6 @@
 			children = (
 				67DEEE46202213A600AAD72C /* TipCalculator */,
 				67DEEE45202213A600AAD72C /* Products */,
-				670FFEB120367C51007B83FD /* Model */,
-				670FFEB220367C67007B83FD /* ViewController */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +72,8 @@
 		67DEEE46202213A600AAD72C /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				670FFEB120367C51007B83FD /* Model */,
+				670FFEB220367C67007B83FD /* ViewController */,
 				67DEEE47202213A600AAD72C /* AppDelegate.swift */,
 				67DEEE4B202213A600AAD72C /* Main.storyboard */,
 				67DEEE4E202213A600AAD72C /* Assets.xcassets */,
