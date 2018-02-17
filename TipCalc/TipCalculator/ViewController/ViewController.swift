@@ -10,19 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    // - MARK : IBOULETS
+    
     @IBOutlet weak var billAmountTextField: UITextField!
     @IBOutlet weak var tipAmountTextField: UITextField!
     @IBOutlet weak var totalAmountTextField: UITextField!
     @IBOutlet weak var tipPercentSelector: UISegmentedControl!
     
-    guard let billAmount = self.billAmountTextField.text, let tipAmount = self.tipAmount
     
     
     
+    
+    // - MARK : IBACTIONS
     @IBAction func calculateButtonTaped(_ sender: Any) {
         
         
     }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

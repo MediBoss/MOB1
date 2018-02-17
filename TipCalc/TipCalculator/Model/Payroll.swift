@@ -10,17 +10,27 @@ import Foundation
 
 class Payroll{
     
+    
     private var billAmount : Double
     private var tipPercent : Double
     
+    
+    // - MARK: INITIALIZER
     init(bill : Double, percent : Double) {
         
         self.billAmount = bill
         self.tipPercent = percent
     }
     
+    // - MARK: DEINITIALIZER
     
-                //GETTERS METHODS
+    deinit {
+        
+        return nill
+    }
+    
+    
+    // - MARK: GETTERS METHODS
     
     //Function to return the tip percent chosen by the customer
     //Postcondition : the tip percent is returned
@@ -37,7 +47,7 @@ class Payroll{
         return self.billAmount
     }
     
-            //COMPUTING
+    // - MARK: COMPUTING FUNCTIONS
     
     //function to return the amount to tip the waiter baised on the bill amount
     //Postcondition : The tip amount is returned
