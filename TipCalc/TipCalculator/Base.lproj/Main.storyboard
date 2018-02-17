@@ -124,6 +124,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="calculateButtonTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yRd-gZ-9Ou"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -147,6 +150,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="billAmountTextField" destination="1Ic-wS-T3V" id="IGJ-Wd-s2y"/>
+                        <outlet property="tipAmountTextField" destination="6Qr-R1-oLN" id="91X-Lk-8Ij"/>
+                        <outlet property="tipPercentSelector" destination="1ML-UJ-0lw" id="ead-F1-pNb"/>
+                        <outlet property="totalAmountTextField" destination="2i7-zF-MgQ" id="LQZ-MQ-Ku7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
