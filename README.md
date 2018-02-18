@@ -3,7 +3,7 @@
 
 ### Assigned Projects
 * Tip Calculator
-* Make School Notes
+* Notes (well my own version based on make school notes app)
 
 
 ### Custom Projects
