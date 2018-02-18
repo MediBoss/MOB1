@@ -24,11 +24,6 @@ class Payroll{
     
     // - MARK: DEINITIALIZER
     
-    deinit {
-        
-        return nill
-    }
-    
     
     // - MARK: GETTERS METHODS
     
@@ -60,7 +55,7 @@ class Payroll{
     //Postcondition : The total price is returned
     func computeTotalAmount() -> Double{
     
-    return (self.getBillAmount() + self.getTipAmount())
+    return (self.getBillAmount() + self.computeTipAmount())
     }
     
 }
