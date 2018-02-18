@@ -8,12 +8,6 @@
 
 import UIKit
 
-struct myVariables{
-    
-    static var bill : Double = 0.0
-    static var tipPercentage : Double = 0.0
-}
-
 class ViewController: UIViewController {
     
     // - MARK : IBOULETS
@@ -28,32 +22,33 @@ class ViewController: UIViewController {
     @IBAction func calculateButtonTaped(_ sender: Any) {
         
         
-        if myVariables.bill == Double(self.billAmountTextField.text!)!{
+        if let billAmount = Double(self.billAmountTextField.text!){
+            var tipPercentage = 0.0
             
             switch self.tipPercentSelector.selectedSegmentIndex {
             case 0:
                 
-                myVariables.tipPercentage = 5.0
+                tipPercentage = 5.0
                 
             case 1:
                 
-                myVariables.tipPercentage = 10.0
+                tipPercentage = 10.0
                 
             case 2:
                 
-                myVariables.tipPercentage = 20.0
+                tipPercentage = 20.0
                 
             default:
                 
                 break
             }
             
-        }
-        
-         let restaurant_client : Payroll = Payroll(myVariables.bill,myVariables.tipPercentage)
+            let restaurant_client : Payroll = Payroll(billAmount,tipPercentage)
             self.tipAmountTextField.text  = String(format : "%.2f", restaurant_client.computeTipAmount())
             self.totalAmountTextField.text = String(format: "%.2f", restaurant_client.computeTotalAmount())
-    
+            
+        }
+        
     }
     
     
