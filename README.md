@@ -3,7 +3,7 @@
 
 ### Assigned Projects
 * Tip Calculator
-* Notes
+* Make School Notes
 
 
 ### Custom Projects
