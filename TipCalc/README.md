@@ -6,4 +6,4 @@ Visit www.makeschool.com/academy
 Sign up if you haven't already
 Find the Tip Calculator tutorial from the Summer Academy (2017)
 </br>
-<img src="images\img1.png" width = 100 height = 100>
+<img src="images\img1.png" width = 100 height = 300>
