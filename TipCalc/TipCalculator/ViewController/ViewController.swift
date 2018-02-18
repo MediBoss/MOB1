@@ -27,20 +27,18 @@ class ViewController: UIViewController {
         
         if ViewController.bill == Double(self.billAmountTextField.text!)!{
             
-            var tipPercentage : Double = 0.0
-            
             switch self.tipPercentSelector.selectedSegmentIndex {
             case 0:
                 
-                tipPercentage = 5.0
+                ViewController.tipPercentage = 5.0
                 
             case 1:
                 
-                tipPercentage = 10.0
+                ViewController.tipPercentage = 10.0
                 
             case 2:
                 
-                tipPercentage = 20.0
+                ViewController.tipPercentage = 20.0
                 
             default:
                 
