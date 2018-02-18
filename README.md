@@ -3,8 +3,7 @@
 
 ### Assigned Projects
 * Tip Calculator
-* Tic Tac Toe
-* Mood Tracker
+* Notes
 
 
 ### Custom Projects
