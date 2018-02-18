@@ -16,7 +16,7 @@ class Payroll{
     
     
     // - MARK: INITIALIZER
-    init(bill : Double, percent : Double) {
+    init(_ bill : Double, _ percent : Double) {
         
         self.billAmount = bill
         self.tipPercent = percent

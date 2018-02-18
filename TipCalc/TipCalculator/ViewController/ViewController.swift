@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    static var bill : Double = 0.0
+    static var tipPercentage : Double = 0.0
     
     // - MARK : IBOULETS
     
@@ -23,10 +25,7 @@ class ViewController: UIViewController {
     @IBAction func calculateButtonTaped(_ sender: Any) {
         
         
-                    //SAFELY UNWRAPING IBOULETS OPTIONALS
-        guard let bill = self.billAmountTextField.text, let tipAmount = self.tipAmountTextField.text, let total = self.totalAmountTextField.text else {return}
-        
-        if bill = self.billAmountTextField.text as? Double{
+        if ViewController.bill == Double(self.billAmountTextField.text!)!{
             
             var tipPercentage : Double = 0.0
             
@@ -45,12 +44,15 @@ class ViewController: UIViewController {
                 
             default:
                 
-                return nil
+                break
             }
             
         }
         
-        
+        let restaurant_client : Payroll = Payroll(ViewController.bill,ViewController.tipPercentage)
+            self.tipAmountTextField.text  = String(format : "%.2f", restaurant_client.computeTipAmount())
+            self.totalAmountTextField.text = String(format: "%.2f", restaurant_client.computeTotalAmount())
+    
     }
     
     
