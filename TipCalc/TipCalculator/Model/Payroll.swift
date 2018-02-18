@@ -22,8 +22,6 @@ class Payroll{
         self.tipPercent = percent
     }
     
-    // - MARK: DEINITIALIZER
-    
     
     // - MARK: GETTERS METHODS
     
