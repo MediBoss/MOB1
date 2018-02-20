@@ -54,6 +54,9 @@
 		67B74597203B76880029937D /* MakeNotes */ = {
 			isa = PBXGroup;
 			children = (
+				67B745AC203C9B5B0029937D /* Controllers */,
+				67B745AB203C9B550029937D /* Views */,
+				67B745AA203C9B4C0029937D /* Models */,
 				67B74598203B76880029937D /* AppDelegate.swift */,
 				67B7459A203B76880029937D /* ViewController.swift */,
 				67B7459C203B76880029937D /* Main.storyboard */,
@@ -62,6 +65,27 @@
 				67B745A4203B76880029937D /* Info.plist */,
 			);
 			path = MakeNotes;
+			sourceTree = "<group>";
+		};
+		67B745AA203C9B4C0029937D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67B745AB203C9B550029937D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67B745AC203C9B5B0029937D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
