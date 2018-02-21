@@ -13,7 +13,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    func checkFirstLaunch(){
+        
+        if UserDefaults.standard.bool(forKey: "hasLaunchedBefore"){
+            
+            print("this app has launched before in this device")
+            
+        }else{
+            UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
+            UserDefaults.standard.set(false, forKey: "midnightThemOn")
+            UserDefaults.standard.synchronize()
+        }
+    }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
