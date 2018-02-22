@@ -1,5 +1,5 @@
 //
-//  ListNotesTableViewCell.swift
+//  NotesTableViewCell.swift
 //  Notes
 //
 //  Created by Assumani, Medi on 2/22/18.
@@ -7,3 +7,11 @@
 //
 
 import Foundation
+import UIKit
+
+class NotesTableViewCell: UITableViewCell{
+    
+    
+    
+    
+}
