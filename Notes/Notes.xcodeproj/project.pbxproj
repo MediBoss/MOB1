@@ -13,6 +13,7 @@
 		67120D63203F3F5E0009090A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67120D61203F3F5E0009090A /* LaunchScreen.storyboard */; };
 		67A79DDA203F7A5F00DD8410 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A79DD9203F7A5F00DD8410 /* NotesTableViewCell.swift */; };
 		67A79DDC203F7A8C00DD8410 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A79DDB203F7A8C00DD8410 /* NotesViewController.swift */; };
+		67A79DDE203F87CA00DD8410 /* DisplayNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A79DDD203F87CA00DD8410 /* DisplayNotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		67120D64203F3F5E0009090A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67A79DD9203F7A5F00DD8410 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
 		67A79DDB203F7A8C00DD8410 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotesViewController.swift; path = ../../../../../../.Trash/NotesViewController.swift; sourceTree = "<group>"; };
+		67A79DDD203F87CA00DD8410 /* DisplayNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				67A79DDB203F7A8C00DD8410 /* NotesViewController.swift */,
+				67A79DDD203F87CA00DD8410 /* DisplayNotesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				67A79DDC203F7A8C00DD8410 /* NotesViewController.swift in Sources */,
 				67120D59203F3F5E0009090A /* AppDelegate.swift in Sources */,
+				67A79DDE203F87CA00DD8410 /* DisplayNotesViewController.swift in Sources */,
 				67A79DDA203F7A5F00DD8410 /* NotesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
