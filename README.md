@@ -3,7 +3,7 @@
 
 ### Assigned Projects
 * Tip Calculator
-* Notes (well my own version based on make school notes app)
+* Notes (well my own version based on make school notes app) : UITableview and Core Data
 
 
 ### Custom Projects
