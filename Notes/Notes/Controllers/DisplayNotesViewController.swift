@@ -15,5 +15,15 @@ class DisplayNotesViewController: UIViewController{
         
         guard let identifier = segue.identifier else {return}
         
+        switch identifier{
+        case "save":
+            print("save button taped")
+            
+        case "cancel":
+            print("cancel button taped")
+            
+        default:
+            print("unexpectd segue identifier")
+        }
     }
 }
