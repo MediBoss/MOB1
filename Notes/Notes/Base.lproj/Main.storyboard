@@ -66,13 +66,19 @@
                             <outlet property="delegate" destination="sd4-T3-Q3b" id="UV6-86-cgH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Notes" id="VbD-0W-N99"/>
+                    <navigationItem key="navigationItem" title="My Notes" id="VbD-0W-N99">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zcn-Oj-r0G">
+                            <connections>
+                                <segue destination="hq2-HA-0vS" kind="show" identifier="addNote" id="aXV-79-hK1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5c-FZ-djd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="758" y="99"/>
         </scene>
-        <!--Display Notes View Controller-->
+        <!--Title-->
         <scene sceneID="8ep-fq-RRj">
             <objects>
                 <viewController id="hq2-HA-0vS" customClass="DisplayNotesViewController" customModule="Notes" customModuleProvider="target" sceneMemberID="viewController">
@@ -106,6 +112,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ve2-FM-YcC"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="Guv-r2-7Qg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="IwW-Bz-BrZ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="s0s-bb-03I"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocE-Is-IKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,4 +140,7 @@
             <point key="canvasLocation" x="86" y="100"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="aXV-79-hK1"/>
+    </inferredMetricsTieBreakers>
 </document>
