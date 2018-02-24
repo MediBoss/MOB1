@@ -36,7 +36,7 @@ class NotesViewController : UITableViewController{
         let cell = tableView.dequeueReusableCell(withIdentifier: "listNotesTableViewCell", for: indexPath) as! NotesTableViewCell
         let note = notes[indexPath.row]
         cell.noteTitle.text = note.title
-        //cell.noteModificationTimeLabel.text = note.modificationTime.convertToString()
+        cell.noteModificationTimeLabel.text = note.modificationTime.convertToString()
         
         return cell
     }
