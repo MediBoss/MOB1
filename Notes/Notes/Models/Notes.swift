@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class Notes{
+    
+    var title = ""
+    var content = ""
+    var modificationTime = Data()
+}

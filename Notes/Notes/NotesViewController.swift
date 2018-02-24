@@ -12,12 +12,18 @@ import UIKit
 class NotesViewController : UITableViewController{
     
     
+        // - MARK : Properties
+    
+    var notes = [Notes]() // an array of of type notes that represent each note
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+
     
-    //- MARKDOWN : TableView Functions
+    
+    // - MARK : TableView Functions
     
     /// Function to determine the amount of rows for the table view
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -60,7 +66,7 @@ class NotesViewController : UITableViewController{
     
     
     
-    //- MARKDOWN : IBACTIONS
+    // - MARK : IBACTIONS
     
     @IBAction func unwindWithSegue(_ segue : UIStoryboardSegue){
         
