@@ -11,6 +11,17 @@ import UIKit
 
 class DisplayNotesViewController: UIViewController{
     
+    // - MAKR : @IBOULETS
+    
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var noteTextView: UITextView!
+    
+    
+    
+    
+    
+    // - MARK : Segue Triggering Alarm Function
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         guard let identifier = segue.identifier else {return}
