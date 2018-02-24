@@ -23,19 +23,20 @@ class NotesViewController : UITableViewController{
 
     
     
-    // - MARK : TableView Functions
+    // - MARK : TableView Methods
     
     /// Function to determine the amount of rows for the table view
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
-        return 10
+        return self.notes.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "listNotesTableViewCell", for: indexPath) as! NotesTableViewCell
-        cell.noteTitle.text = "note's title"
-        cell.noteModificationTimeLabel.text = "note modification time"
+        let note = notes[indexPath.row]
+        cell.noteTitle.text = note.title
+        //cell.noteModificationTimeLabel.text = note.modificationTime.convertToString()
         
         return cell
     }
