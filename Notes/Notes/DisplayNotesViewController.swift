@@ -17,6 +17,15 @@ class DisplayNotesViewController: UIViewController{
     @IBOutlet weak var noteTextView: UITextView!
     
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        func viewWillAppear(_ animated: Bool){
+            super.viewWillAppear(animated)
+            self.titleTextField.text = ""
+            self.noteTextView.text = ""
+        }
+        
+    }
     
     
     
@@ -28,10 +37,19 @@ class DisplayNotesViewController: UIViewController{
         
         switch identifier{
         case "save":
-            print("save button taped")
             
+            let note = Notes()
+            note.title = titleTextField.text ?? ""
+            note.content = noteTextView.text ?? ""
+            note.modificationTime = Date()
+            
+            
+            let destination = segue.destination as! NotesViewController
+            destination.notes.append(note)
         case "cancel":
-            print("cancel button taped")
+            
+            print("cancel bar button is taped")
+            
             
         default:
             print("unexpectd segue identifier")

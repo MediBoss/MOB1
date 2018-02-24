@@ -14,8 +14,11 @@ class NotesViewController : UITableViewController{
     
         // - MARK : Properties
     
-    var notes = [Notes]() // an array of of type notes that represent each note
-    
+    var notes = [Notes]()  {
+        didSet {
+            tableView.reloadData()// reloads the table views if the notes havec been updayed
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
