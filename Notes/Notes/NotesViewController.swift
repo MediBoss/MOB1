@@ -6,7 +6,6 @@
 //  Copyright © 2018 Assumani, Medi. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import CoreData
 
@@ -16,9 +15,9 @@ class NotesViewController : UITableViewController{
     
         // - MARK : Properties
     
-    var notes = [Notes]()  {
+    var notes = [Note]()  {
         didSet {
-            tableView.reloadData()// reloads the table views if the notes havec been updayed
+            tableView.reloadData()// reloads the table views if the notes havec been updaye
         }
     }
     override func viewDidLoad() {
@@ -37,11 +36,12 @@ class NotesViewController : UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "listNotesTableViewCell", for: indexPath) as! NotesTableViewCell
+        
         let note = notes[indexPath.row]
-        cell.noteTitle.text = note.title
-        cell.noteModificationTimeLabel.text = note.modificationTime.convertToString()
+        cell.noteTitleLabel.text = note.title
+        // 1
+        cell.noteModificationTimeLabel.text = note.modificationTime?.convertToString() ?? "unknown"
         
         return cell
     }

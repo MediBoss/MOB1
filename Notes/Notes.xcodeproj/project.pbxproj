@@ -16,6 +16,7 @@
 		67A79DE6203F9AF200DD8410 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A79DE5203F9AF200DD8410 /* NotesViewController.swift */; };
 		67A79DEB2041010400DD8410 /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A79DEA2041010400DD8410 /* Date+convertToString.swift */; };
 		67A79E0F20438B6F00DD8410 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67A79E0D20438B6F00DD8410 /* Notes.xcdatamodeld */; };
+		67A79E1420438EA500DD8410 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A79E1320438EA500DD8410 /* CoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		67A79DE5203F9AF200DD8410 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		67A79DEA2041010400DD8410 /* Date+convertToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
 		67A79E0E20438B6F00DD8410 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
+		67A79E1320438EA500DD8410 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				67120D5C203F3F5E0009090A /* Main.storyboard */,
 				67A79DE5203F9AF200DD8410 /* NotesViewController.swift */,
 				67120D58203F3F5E0009090A /* AppDelegate.swift */,
+				67A79E1320438EA500DD8410 /* CoreDataHelper.swift */,
 				67A79DDD203F87CA00DD8410 /* DisplayNotesViewController.swift */,
 				67120D5F203F3F5E0009090A /* Assets.xcassets */,
 				67120D61203F3F5E0009090A /* LaunchScreen.storyboard */,
@@ -175,6 +178,7 @@
 				67A79DE6203F9AF200DD8410 /* NotesViewController.swift in Sources */,
 				67A79E0F20438B6F00DD8410 /* Notes.xcdatamodeld in Sources */,
 				67120D59203F3F5E0009090A /* AppDelegate.swift in Sources */,
+				67A79E1420438EA500DD8410 /* CoreDataHelper.swift in Sources */,
 				67A79DEB2041010400DD8410 /* Date+convertToString.swift in Sources */,
 				67A79DDE203F87CA00DD8410 /* DisplayNotesViewController.swift in Sources */,
 				67A79DDA203F7A5F00DD8410 /* NotesTableViewCell.swift in Sources */,
