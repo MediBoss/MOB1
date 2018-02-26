@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import CoreData
+
 
 class NotesViewController : UITableViewController{
     
@@ -42,6 +44,12 @@ class NotesViewController : UITableViewController{
         cell.noteModificationTimeLabel.text = note.modificationTime.convertToString()
         
         return cell
+    }
+    /// Function to delete a note in the table view
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            notes.remove(at: indexPath.row)
+        }
     }
     
     /// Function to show actions when segues are triggered

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class DisplayNotesViewController: UIViewController{
     
@@ -19,12 +20,13 @@ class DisplayNotesViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        func viewWillAppear(_ animated: Bool){
-            super.viewWillAppear(animated)
-            self.titleTextField.text = ""
-            self.noteTextView.text = ""
-        }
-        
+      
+    }
+    
+    override func viewWillAppear(_ animated: Bool){
+        super.viewWillAppear(animated)
+        self.titleTextField.text = ""
+        self.noteTextView.text = ""
     }
     
     
