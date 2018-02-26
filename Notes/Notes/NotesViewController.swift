@@ -12,6 +12,12 @@ import CoreData
 
 class NotesViewController : UITableViewController{
     
+  
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        notes = CoreDataHelper.retrieveNote()// retrieves all the user's notes once the app launches
+    }
+    
     
         // - MARK : Properties
     
@@ -20,14 +26,10 @@ class NotesViewController : UITableViewController{
             tableView.reloadData()// reloads the table views if the notes have been updated
         }
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
 
     
-    
     // - MARK : TableView Methods
+    
     
     /// Function to determine the amount of rows for the table view
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,6 +37,8 @@ class NotesViewController : UITableViewController{
         return self.notes.count
     }
     
+    
+    /// Function to set up the table cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listNotesTableViewCell", for: indexPath) as! NotesTableViewCell
         
@@ -45,10 +49,15 @@ class NotesViewController : UITableViewController{
         
         return cell
     }
+    
+    
     /// Function to delete a note in the table view
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            notes.remove(at: indexPath.row)
+            let noteToDelete = notes[indexPath.row]
+            CoreDataHelper.delete(note: noteToDelete) // deletes the selected note
+            
+            notes = CoreDataHelper.retrieveNote()// retrieves all the current notes of the user
         }
     }
     
@@ -82,7 +91,7 @@ class NotesViewController : UITableViewController{
     
     @IBAction func unwindWithSegue(_ segue : UIStoryboardSegue){
         
-        // no code required here
+        notes = CoreDataHelper.retrieveNote()
     }
     
 }
