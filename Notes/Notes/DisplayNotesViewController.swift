@@ -40,7 +40,7 @@ class DisplayNotesViewController: UIViewController{
         switch identifier{
         case "save":
             
-            let note = Notes()
+            let note = Note()
             note.title = titleTextField.text ?? ""
             note.content = noteTextView.text ?? ""
             note.modificationTime = Date()

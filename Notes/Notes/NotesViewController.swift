@@ -17,7 +17,7 @@ class NotesViewController : UITableViewController{
     
     var notes = [Note]()  {
         didSet {
-            tableView.reloadData()// reloads the table views if the notes havec been updaye
+            tableView.reloadData()// reloads the table views if the notes have been updated
         }
     }
     override func viewDidLoad() {
@@ -39,7 +39,7 @@ class NotesViewController : UITableViewController{
         let cell = tableView.dequeueReusableCell(withIdentifier: "listNotesTableViewCell", for: indexPath) as! NotesTableViewCell
         
         let note = notes[indexPath.row]
-        cell.noteTitleLabel.text = note.title
+        cell.noteTitle.text = note.title
         // 1
         cell.noteModificationTimeLabel.text = note.modificationTime?.convertToString() ?? "unknown"
         
