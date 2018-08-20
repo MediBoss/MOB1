@@ -10,8 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // - MARK : IBOULETS
-    
+    // - MARK : IBOULETS 
     @IBOutlet weak var billAmountTextField: UITextField!
     @IBOutlet weak var tipAmountTextField: UITextField!
     @IBOutlet weak var totalAmountTextField: UITextField!
@@ -46,12 +45,9 @@ class ViewController: UIViewController {
             let restaurant_client : Payroll = Payroll(billAmount,tipPercentage)
             self.tipAmountTextField.text  = String(format : "%.2f", restaurant_client.computeTipAmount())
             self.totalAmountTextField.text = String(format: "%.2f", restaurant_client.computeTotalAmount())
-            
         }
         
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
